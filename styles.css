@@ -1,0 +1,95 @@
+/* Trading Project Style Sheet 9-24-2024 */
+body,html {
+    height: 100%;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.wall-street {
+    filter: brightness(40%);
+    height: 50%;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img1 {background-image: url("images/wall-street.jpg");}
+.img2 {background-image: url("images/wall-street2.jpg");}
+
+.company_name {
+    background-color: reg(0,0,0);
+    background-color: rbga(0,0,0, 0.4);
+    color: white;
+    font-weight: bold;
+    font-size: 75px;
+    border: 10px solid #f1f1f1;
+    position: fixed; /* Change this to absolute to have it stay in image*/
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+}
+
+.navigation_bar {
+    background-color: #555555;
+    overflow: hidden; 
+}
+
+.navigation_bar a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    z-index: 1;
+}
+
+.navigation_bar a:hover {
+    background-color: #999999;
+    color: black;
+}
+
+.navigation_bar a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+
+#left_content {
+    display: inline-block;
+    background-color: #555555;
+    position: absolute;
+    top: 900px;
+    left: 0;
+    right: 80%;
+    padding: 10px;
+    margin: 1%;
+}
+
+#middle_content {
+    display: inline-block;
+    background-color: #898989;
+    position: absolute;
+    top: 900px;
+    right: 20%;
+    left: 20%;
+    padding: 20px;
+}
+
+#right_content {
+    display: inline-block;
+    background-color: #555555;
+    position: absolute;
+    top: 900px;
+    right: 0;
+    left: 80%;
+    padding: 10px;
+    margin: 1%;
+}
